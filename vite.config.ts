@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // GitHub Pages deployment configuration
   // Use repository path for GitHub Pages, root path for custom domain
-  base: '/',
+  base: mode === 'development' ? '/' : '/eninnov-nexus/',
   server: {
     host: "::",
     port: 8080,
