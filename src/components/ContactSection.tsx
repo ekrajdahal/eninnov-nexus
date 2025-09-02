@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   return (
@@ -20,10 +21,13 @@ const ContactSection = () => {
 
           {/* CTA Button */}
           <Button 
+            asChild
             size="lg"
             className="bg-gradient-primary text-primary-foreground font-semibold px-12 py-6 text-xl hover-glow transition-smooth border-0 mb-12"
           >
-            Contact Us Today
+            <Link to="/client">
+              Contact Us Today
+            </Link>
           </Button>
 
           {/* Contact Information */}
@@ -33,7 +37,7 @@ const ContactSection = () => {
                 <Mail className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
-              <p className="text-muted-foreground">hello@eninnov.com</p>
+              <p className="text-muted-foreground">contact@eninnovate.com</p>
             </div>
 
             <div className="text-center group">
@@ -41,7 +45,7 @@ const ContactSection = () => {
                 <Phone className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
-              <p className="text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-muted-foreground">+1 (503) 567-9387</p>
             </div>
 
             <div className="text-center group">
@@ -49,7 +53,7 @@ const ContactSection = () => {
                 <MapPin className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
-              <p className="text-muted-foreground">Silicon Valley, CA</p>
+              <p className="text-muted-foreground">Portland, OR</p>
             </div>
           </div>
         </div>

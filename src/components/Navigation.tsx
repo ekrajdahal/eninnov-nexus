@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,6 +60,12 @@ const Navigation = () => {
             >
               Who We Serve
             </button>
+            <Link 
+              to="/career"
+              className="text-foreground/80 hover:text-primary transition-smooth"
+            >
+              Career
+            </Link>
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline" 

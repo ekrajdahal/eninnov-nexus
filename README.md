@@ -1,8 +1,67 @@
-# Welcome to your Lovable project
+# Eninnov Website
 
-## Project info
+A modern React website for Eninnov, LLC - Engineering | Innovation | Solution
 
-**URL**: https://lovable.dev/projects/bb8f7cbb-e76b-4f15-a2b1-4cee58507e6e
+**Live Site**: https://www.eninnovate.com
+
+## 🚀 Deployment to GitHub Pages
+
+This website is configured to automatically deploy to GitHub Pages at **https://www.eninnovate.com**
+
+### Automatic Deployment
+
+The website automatically deploys when you push to the `main` branch using GitHub Actions.
+
+#### Setup Instructions:
+
+1. **Push your code to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Initial deployment setup"
+   git push origin main
+   ```
+
+2. **Configure GitHub Pages:**
+   - Go to your GitHub repository settings
+   - Navigate to "Pages" section
+   - Set Source to "GitHub Actions"
+   - The CNAME file is already configured for `www.eninnovate.com`
+
+3. **Configure your domain DNS:**
+   - Add these DNS records at your domain registrar:
+     ```
+     Type: CNAME
+     Host: www
+     Value: ekrajdahal.github.io
+     
+     Type: A (for apex domain eninnovate.com)
+     Host: @
+     Values: 
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+     ```
+
+### Manual Deployment (Alternative)
+
+You can also deploy manually using the npm script:
+
+```bash
+npm run deploy
+```
+
+## 📧 Contact Forms
+
+The website includes two forms that route to **contact@eninnovate.com**:
+
+- **Career Form**: `/career` - For candidates interested in opportunities
+- **Client Form**: `/client` - For businesses seeking services
+
+## 🌐 URLs
+
+- **Production**: https://www.eninnovate.com
+- **Development**: http://localhost:8080
 
 ## How can I edit this code?
 
