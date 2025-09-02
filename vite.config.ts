@@ -5,9 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // GitHub Pages deployment configuration
-  // Use repository path for GitHub Pages, root path for custom domain
-  base: mode === 'development' ? '/' : '/eninnov-nexus/',
+  // Custom domain deployment configuration
+  // Use root path for custom domain (www.eninnovate.com)
+  base: '/',
   server: {
     host: "::",
     port: 8080,

@@ -30,6 +30,7 @@ The website automatically deploys when you push to the `main` branch using GitHu
 3. **Configure your domain DNS:**
    - Add these DNS records at your domain registrar:
      ```
+     # Website hosting
      Type: CNAME
      Host: www
      Value: ekrajdahal.github.io
@@ -41,6 +42,12 @@ The website automatically deploys when you push to the `main` branch using GitHu
      185.199.109.153
      185.199.110.153
      185.199.111.153
+     
+     # Email hosting
+     Type: MX
+     Host: @
+     Value: mx.eninnovate.com.cust.hostedemail.com
+     Priority: 10
      ```
 
 ### Manual Deployment (Alternative)
@@ -51,12 +58,17 @@ You can also deploy manually using the npm script:
 npm run deploy
 ```
 
-## 📧 Contact Forms
+## 📧 Contact Forms & Email Setup
 
 The website includes two forms that route to **contact@eninnovate.com**:
 
 - **Career Form**: `/career` - For candidates interested in opportunities
 - **Client Form**: `/client` - For businesses seeking services
+
+### Email Configuration:
+- **Custom Email**: contact@eninnovate.com (hosted email service)
+- **MX Record**: mx.eninnovate.com.cust.hostedemail.com
+- **Forms**: Both career and client forms automatically open user's email client with pre-filled content
 
 ## 🌐 URLs
 
