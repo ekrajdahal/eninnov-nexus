@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.jpeg';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -20,6 +21,15 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <div className="animate-fade-in-up">
+          {/* Logo */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src={logo} 
+              alt="ENINNOV Logo" 
+              className="h-20 md:h-24 w-auto object-contain opacity-70 blur-[0.5px] drop-shadow-sm"
+            />
+          </div>
+
           {/* Company Name */}
           <h1 className="text-6xl md:text-8xl font-black mb-6 text-gradient-hero text-glow">
             ENINNOV

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import logo from '@/assets/logo.jpeg';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,8 +31,15 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-gradient-hero">
-            ENINNOV
+          <div className="flex items-center space-x-3">
+            <img 
+              src={logo} 
+              alt="ENINNOV Logo" 
+              className="h-10 w-auto object-contain"
+            />
+            <div className="text-2xl font-bold text-gradient-hero">
+              ENINNOV
+            </div>
           </div>
 
           {/* Navigation Links */}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '@/assets/logo.jpeg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,12 +21,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Side - Branding */}
           <div>
-            <button 
-              onClick={scrollToTop}
-              className="text-3xl font-bold text-gradient-hero mb-4 hover:scale-105 transition-smooth"
-            >
-              ENINNOV
-            </button>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logo} 
+                alt="ENINNOV Logo" 
+                className="h-8 w-auto object-contain"
+              />
+              <button 
+                onClick={scrollToTop}
+                className="text-3xl font-bold text-gradient-hero hover:scale-105 transition-smooth"
+              >
+                ENINNOV
+              </button>
+            </div>
             <p className="text-muted-foreground">
               Engineering | Innovation | Solution
             </p>
