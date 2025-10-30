@@ -63,7 +63,7 @@ const ContactSection = () => {
 
             <div className="text-center group">
               <a 
-                href="https://www.linkedin.com/in/eninnov-llc-196b8237b/"
+                href="https://www.linkedin.com/in/eninnov-196b8237b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
